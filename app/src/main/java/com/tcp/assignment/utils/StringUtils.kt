@@ -6,7 +6,6 @@
  *
  */
 
-package com.daewoo.cod.utils
 
 import android.text.TextUtils
 

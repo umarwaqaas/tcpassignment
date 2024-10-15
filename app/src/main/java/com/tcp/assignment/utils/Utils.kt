@@ -3,17 +3,12 @@ package com.tcp.assignment.utils
 import android.app.Activity
 import android.util.Log
 import android.view.inputmethod.InputMethodManager
-import com.daewoo.cod.utils.StringUtils
 import java.lang.Exception
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 
-/**
- * Created by Umer Waqas on 27/09/2022.
- * Daewoo Express Bus Service Pakistan
- * umarwaqaas@gmail.com
- */
+
 object Utils {
     const val DATE_MMMM_DD_YYYY_FORMAT = "MMM dd, yyyy"
     const val TASK_RESOLVED = 0

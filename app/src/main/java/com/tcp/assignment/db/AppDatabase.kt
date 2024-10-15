@@ -7,11 +7,7 @@ import androidx.room.RoomDatabase
 import com.tcp.assignment.dao.TasksStatusDao
 import com.tcp.assignment.entity.TasksStatus
 
-/**
- * Created by Umer Waqas on 27/08/2021.
- * Daewoo Express Bus Service Pakistan
- * umarwaqaas@gmail.com
- */
+
 @Database(
     entities = [TasksStatus::class],
     version = 1,

@@ -12,11 +12,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-/**
- * Created by Umer Waqas on 27/08/2021.
- * Daewoo Express Bus Service Pakistan
- * umarwaqaas@gmail.com
- */
+
 @Entity(tableName = "user_tasks_table")
 data class TasksStatus(
 

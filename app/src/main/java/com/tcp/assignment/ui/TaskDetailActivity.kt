@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.daewoo.cod.utils.StringUtils
 import com.google.gson.Gson
 import com.tcp.assignment.AppController
 import com.tcp.assignment.R
