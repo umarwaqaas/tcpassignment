@@ -1,10 +1,15 @@
 # tcpassignment
 
 **Task Manager App**
+
 Platform: **Android**
+
 Language: **100% Kotlin**
+
 Framework: **Android SDK**
+
 Status: **All stories fulfilled**
+
 Github Link : https://github.com/umarwaqaas/tcpassignment
 
 
