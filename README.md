@@ -77,9 +77,7 @@ The Task Manager App helps employees manage daily tasks, track progress, and upd
 
 **API Integration**
 
-The app fetches tasks from the provided endpoint:
-
-http://demo1414406.mockable.io/
+The app fetches tasks from the provided endpoint
 
 •	The tasks are loaded and stored locally in memory, and all sorting and filtering are done locally.
 
