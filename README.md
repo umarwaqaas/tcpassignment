@@ -78,9 +78,13 @@ http://demo1414406.mockable.io/
 •	Kotlin: The app is written in Kotlin and uses modern Android development practices.
 
 **How to Run the Project**
+
 1	Clone the repository.
+
 2	Open the project in Android Studio.
+
 3	Sync the Gradle files and run the app on an emulator or device.
+
 4	The tasks will be fetched from the mock API endpoint.
 
 
