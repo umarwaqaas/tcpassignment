@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp"
+    android:background="@color/yellow_color"
+    tools:context=".ui.TaskListActivity">
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/chevron_left_24px"
+            />
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/amsipro_bold"
+            android:text="Task Detail"/>
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/task_details">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:fitsSystemWindows="true"
+                    android:layout_marginTop="@dimen/_16sdp"
+
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTaskTitle"
+                        android:layout_width="match_parent"
+                        android:text="Prepartion for Meeting"
+                        android:fontFamily="@font/amsipro_bold"
+                        android:textColor="@color/red_color"
+                        android:textSize="@dimen/_20sdp"
+                        android:layout_height="wrap_content"
+                        />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:background="@color/light_yellow"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_height="1dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Due Date"
+                                android:fontFamily="@font/amsipro_regular"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <TextView
+                                android:id="@+id/txtDueDate"
+                                android:layout_width="match_parent"
+                                android:text="Apr 23 2016"
+                                android:fontFamily="@font/amsipro_bold"
+                                android:textColor="@color/red_color"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Days Left"
+                                android:fontFamily="@font/amsipro_regular"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <TextView
+                                android:id="@+id/txtDayLeft"
+                                android:layout_width="match_parent"
+                                android:text="12"
+                                android:fontFamily="@font/amsipro_bold"
+                                android:textColor="@color/red_color"
+                                android:textSize="@dimen/_12sdp"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:background="@color/light_yellow"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/txtTaskDescription"
+                        android:layout_width="match_parent"
+                        android:text="Create the document which will enlist the top 10 architectural problems we do have in SomeCoolApp codebase."
+                        android:fontFamily="@font/amsipro_regular"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        />
+
+
+
+
+
+                </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+
+            android:orientation="vertical">
+            <View
+                android:layout_width="wrap_content"
+                android:background="@color/light_yellow"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/txtTaskStatus"
+                android:layout_width="match_parent"
+                android:text="Unresolved"
+                android:fontFamily="@font/amsipro_bold"
+                android:textColor="@color/darker_orange_color"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/taskStatusButtonControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnResolve"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:text="Resolve"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/amsipro_bold"
+            android:background="@drawable/btn_resolved_bg"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUnResolved"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="Can't Resolve"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/amsipro_bold"
+            android:background="@drawable/btn_unresolved_bg"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageTaskStatus"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:src="@drawable/unresolved_sign"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>
