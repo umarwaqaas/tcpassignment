@@ -86,12 +86,12 @@ class TaskDetailActivity : AppCompatActivity() {
     }
     fun addTaskStatus(taskID: String, taskStatus: Int, taskComments: String) {
         val taskStatus = TasksStatus(taskID, taskStatus, taskComments)
-        AppController.mCustomerDao?.insertTaskStatus(taskStatus)
+        AppController.mTaskDao?.insertTaskStatus(taskStatus)
         toast("Task Status Updated")
         getTaskStatus(taskID)
     }
     private fun getTaskStatus(taskID: String) {
-        val taskStatus = AppController.mCustomerDao?.getSpecificTaskStatus(taskID)
+        val taskStatus = AppController.mTaskDao?.getSpecificTaskStatus(taskID)
         if(taskStatus == null){
             binding.taskStatusButtonControl.visibility = View.VISIBLE
             binding.imageTaskStatus.visibility = View.GONE

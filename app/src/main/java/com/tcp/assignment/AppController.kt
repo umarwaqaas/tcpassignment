@@ -19,7 +19,7 @@ class AppController : MultiDexApplication() {
         super.onCreate()
         instance = this
         database = AppDatabase.getDatabase(context = this)
-        mCustomerDao = database?.customerDao()
+        mTaskDao = database?.taskDao()
     }
 
 
@@ -29,7 +29,7 @@ class AppController : MultiDexApplication() {
         private val TAG = AppController::class.java
                 .simpleName
          var database: AppDatabase? = null
-        var mCustomerDao: TasksStatusDao? = null
+        var mTaskDao: TasksStatusDao? = null
 
         @get:Synchronized
         var instance: AppController? = null

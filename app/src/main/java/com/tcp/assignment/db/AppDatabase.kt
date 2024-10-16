@@ -15,7 +15,7 @@ import com.tcp.assignment.entity.TasksStatus
 )
 abstract class AppDatabase : RoomDatabase() {
 
-    abstract fun customerDao(): TasksStatusDao
+    abstract fun taskDao(): TasksStatusDao
 
     companion object {
         @Volatile

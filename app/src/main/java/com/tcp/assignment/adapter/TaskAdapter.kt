@@ -36,7 +36,7 @@ class   TaskAdapter(
         holder.binding.txtTaskTitle.text = eachTask?.title
         holder.binding.txtDueDate.text = Utils.getParsedDate(eachTask?.dueDate.toString())
         holder.binding.txtDayLeft.text = Utils.calculateDaysBetween(eachTask?.targetDate.toString(), eachTask?.dueDate.toString())
-        val taskStatus = AppController.mCustomerDao?.getSpecificTaskStatus(eachTask?.id.toString())
+        val taskStatus = AppController.mTaskDao?.getSpecificTaskStatus(eachTask?.id.toString())
         if(taskStatus == null){
             holder.binding.layoutDaysLeft.visibility = View.VISIBLE
             holder.binding.btnTaskStatus.visibility = View.GONE
